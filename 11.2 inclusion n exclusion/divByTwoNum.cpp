@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int div(int a, int b, int n)
+{
+    int c1 = n / a;
+    int c2 = n / b;
+    int c3 = n / (a * b);
+
+    return (c1 + c2 - c3);
+}
+
+int main()
+{
+    int a, b, n;
+    cin >> a >> b >> n;
+    cout<<div(a, b, n)<<endl;
+    return 0;
+}
